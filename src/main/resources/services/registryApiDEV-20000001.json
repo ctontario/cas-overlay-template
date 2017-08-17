@@ -1,0 +1,14 @@
+{
+    "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
+    "serviceId" : "https://cto.local:9000/api/v1/security/sso/metadata.xml",
+    "name" : "registryApiDEV",
+    "id" : 20000001,
+    "evaluationOrder" : 0,
+    "metadataLocation" : "/etc/cas/metadata/registryApiDEV.xml",
+    //"metadataLocation": "https://cto.local:9000/api/v1/security/sso/metadata.xml",
+    "accessStrategy" : {
+        "@class" : "org.apereo.cas.services.DefaultRegisteredServiceAccessStrategy",
+        "enabled" : true,
+        "ssoEnabled" : true
+    }
+}
