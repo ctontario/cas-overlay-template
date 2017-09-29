@@ -13,3 +13,5 @@ bin/
 *.iml
 *.log
 logs/
+# cas.properties will be created by the build process.
+etc/cas/config/cas.properties
