@@ -4,7 +4,7 @@
     "name" : "registryApiStage1",
     "id" : 20000002,
     "evaluationOrder" : 10,
-    "metadataLocation": "https://registry-stage1.ctodev.com/api/v1/sso/metadata.xml",
+    "metadataLocation": "https://registry-stage1.ctodev.com/api/v1/sso/cto-metadata.xml",
     "encryptAssertions" : true,
     "signAssertions" : true
 }
