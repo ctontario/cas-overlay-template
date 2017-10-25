@@ -101,7 +101,7 @@
 
   <div th:unless="${passwordManagementEnabled}">
     <span class="fa fa-question-circle cto-help-icon"></span>
-    <a th:href="@{${@environment.getProperty('REGISTRY_CAS_REGISTRY_FE_WEBROOT')} + #{cas.custom.resetPassword.uri}}" th:utext="#{cas.custom.resetPassword.text}" ></a>
+    <a th:href="@{${@environment.getProperty('cto.reg.fe.url')} + #{cas.custom.resetPassword.uri}}" th:utext="#{cas.custom.resetPassword.text}" ></a>
     <p/>
   </div>
 

@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" ng-reflect-router-link="" th:href="${@environment.getProperty('REGISTRY_CAS_REGISTRY_FE_WEBROOT')}">
+      <a class="navbar-brand" ng-reflect-router-link="" th:href="${@environment.getProperty('cto.reg.fe.url')}">
         <span class="navbar-brand-text">CTO Registry</span>
       </a>
     </div>
@@ -17,7 +17,7 @@
     <div class="navbar-collapse collapse" id="cto-navbar-content">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a role="button"  th:href="@{${@environment.getProperty('REGISTRY_CAS_REGISTRY_FE_WEBROOT')} + #{cas.custom.register.uri}}">
+          <a role="button"  th:href="@{${@environment.getProperty('cto.reg.fe.url')} + #{cas.custom.register.uri}}">
             <span class="menu-item-icon">
               <i aria-hidden="true" class="fa fa-user-circle"></i>
             </span>
