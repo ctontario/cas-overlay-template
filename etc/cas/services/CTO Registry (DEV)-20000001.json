@@ -9,18 +9,5 @@
     "metadataLocation": "https://cto.local:9000/api/v1/sso/metadata.xml",
     "encryptAssertions" : true,
     "signAssertions" : true,
-    "requiredNameIdFormat" : "urn:oasis:names:tc:SAML:2.0:nameid-format:basic",
-    "attributeNameFormats":
-    {
-        "@class": "java.util.HashMap",
-        "sn": "basic",
-        "givenName": "basic",
-        "cn" : "basic"
-    },
-    "attributeReleasePolicy": {
-        "@class": "org.apereo.cas.support.saml.services.PatternMatchingEntityIdAttributeReleasePolicy",
-        "allowedAttributes" : [ "java.util.ArrayList", [ "cn", "givenName", "sn" ] ],
-        "fullMatch" : "true",
-        "entityIds" : "registry-api-local"
-    }
+    "requiredNameIdFormat" : "urn:oasis:names:tc:SAML:2.0:nameid-format:basic"
 }
