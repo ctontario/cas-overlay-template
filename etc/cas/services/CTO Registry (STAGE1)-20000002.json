@@ -1,0 +1,12 @@
+{
+    "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
+    "serviceId" : "registry-api-stage1",
+    "name" : "CTO Registry (STAGE1)",
+    "description" : "<p>The CTO Registry lets you view and access all your studies and data associated with CTO in one place.</p>",
+    "id" : 20000002,
+    "evaluationOrder" : 10,
+    "metadataLocation": "https://registry-stage1.ctodev.com/api/v1/sso/metadata.xml",
+    "encryptAssertions" : true,
+    "signAssertions" : true,
+    "requiredNameIdFormat" : "urn:oasis:names:tc:SAML:2.0:nameid-format:basic"
+}

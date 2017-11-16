@@ -1,0 +1,12 @@
+{
+    "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
+    "serviceId" : "https://ctotrain.forms.ethicalreviewmanager.com",
+    "name" : "CTO Stream (TRAIN)",
+    "description" : "<p>CTO Stream lets you create submit and work with all ethical review applications through CTO.</p>",
+    "id" : 20000010,
+    "evaluationOrder" : 10,
+    "metadataLocation": "/etc/cas/services/metadata/cto-train-metadata.xml",
+    "encryptAssertions" : true,
+    "signAssertions" : true,
+    "requiredNameIdFormat" : "urn:oasis:names:tc:SAML:2.0:nameid-format:basic"
+}
