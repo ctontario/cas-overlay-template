@@ -8,5 +8,22 @@
     "metadataLocation": "/etc/cas/services/metadata/cto-train-metadata.xml",
     "encryptAssertions" : true,
     "signAssertions" : true,
-    "requiredNameIdFormat" : "urn:oasis:names:tc:SAML:2.0:nameid-format:basic"
+    "requiredNameIdFormat" : "urn:oasis:names:tc:SAML:2.0:nameid-format:basic",
+    "attributeReleasePolicy": {
+        "@class": "org.apereo.cas.services.ChainingAttributeReleasePolicy",
+        "policies": [ "java.util.ArrayList",
+            [
+                {
+                    "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+                },
+                {
+                    "@class": "org.apereo.cas.services.ReturnMappedAttributeReleasePolicy",
+                    "allowedAttributes": {
+                        "@class": "java.util.TreeMap",
+                        "uid" : "mail"
+                    }
+                }
+            ]
+        ]
+    }
 }
