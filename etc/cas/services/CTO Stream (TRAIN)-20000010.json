@@ -14,12 +14,14 @@
         "policies": [ "java.util.ArrayList",
             [
                 {
-                    "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+                    "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
+                    "allowedAttributes" : [ "java.util.ArrayList", [ "givenName", "uid", "sn" ] ]
                 },
                 {
                     "@class": "org.apereo.cas.services.ReturnMappedAttributeReleasePolicy",
                     "allowedAttributes": {
                         "@class": "java.util.TreeMap",
+                        "cn" : "displayName",
                         "uid" : "mail"
                     }
                 }

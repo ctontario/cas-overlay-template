@@ -9,5 +9,24 @@
     "metadataLocation": "https://cto.local:9000/api/v1/sso/metadata.xml",
     "encryptAssertions" : true,
     "signAssertions" : true,
-    "requiredNameIdFormat" : "urn:oasis:names:tc:SAML:2.0:nameid-format:basic"
+    "requiredNameIdFormat" : "urn:oasis:names:tc:SAML:2.0:nameid-format:basic",
+    "attributeReleasePolicy": {
+        "@class": "org.apereo.cas.services.ChainingAttributeReleasePolicy",
+        "policies": [ "java.util.ArrayList",
+            [
+                {
+                    "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
+                    "allowedAttributes" : [ "java.util.ArrayList", [ "givenName", "uid", "sn" ] ]
+                },
+                {
+                    "@class": "org.apereo.cas.services.ReturnMappedAttributeReleasePolicy",
+                    "allowedAttributes": {
+                        "@class": "java.util.TreeMap",
+                        "cn" : "displayName",
+                        "uid" : "mail"
+                    }
+                }
+            ]
+        ]
+    }
 }
