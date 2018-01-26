@@ -74,16 +74,19 @@
             <type>war</type>
             <scope>runtime</scope>
         </dependency>
+        <!-- Custom CTO Dependancy -->
         <dependency>
              <groupId>org.apereo.cas</groupId>
              <artifactId>cas-server-support-ldap</artifactId>
              <version>${cas.version}</version>
         </dependency>
+        <!-- Custom CTO Dependancy -->
         <dependency>
             <groupId>org.apereo.cas</groupId>
             <artifactId>cas-server-support-saml-idp</artifactId>
             <version>${cas.version}</version>
         </dependency>
+        <!-- Custom CTO Dependancy -->
         <dependency>
             <groupId>org.apereo.cas</groupId>
             <artifactId>cas-server-support-json-service-registry</artifactId>
@@ -92,7 +95,7 @@
     </dependencies>
 
     <properties>
-        <cas.version>5.2.0-SNAPSHOT</cas.version>
+        <cas.version>5.2.1</cas.version>
         <springboot.version>1.5.8.RELEASE</springboot.version>
         <!-- app.server could be -jetty, -undertow, -tomcat, or blank if you plan to provide appserver -->
         <app.server>-tomcat</app.server> 

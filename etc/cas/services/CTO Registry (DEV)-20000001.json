@@ -6,7 +6,7 @@
     "description" : "<p>The CTO Registry lets you view and access all your studies and data associated with CTO in one place.</p>",
     "id" : 20000001,
     "evaluationOrder" : 10,
-    "metadataLocation": "https://cto.local:9000/api/v1/sso/metadata.xml",
+    "metadataLocation": "/etc/cas/services/metadata/registry-api-localhost.metadata.xml",
     "encryptAssertions" : true,
     "signAssertions" : true,
     "requiredNameIdFormat" : "urn:oasis:names:tc:SAML:2.0:nameid-format:basic",
